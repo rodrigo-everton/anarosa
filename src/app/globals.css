@@ -5,12 +5,18 @@
   --black-secondary: #121212;
   --white: #ffffff;
   --white-secondary: #f8f8f8;
-  --orange: #f97316;
-  --orange-secondary: #fb923c;
-  --orange-hover: #ea580c;
+  --red: #C62828;
+  --red-secondary: #E57373;
+  --red-hover: #A61E1E;
+  --pink: #FF69B4;
+  --pink-secondary: #FFB6D9;
+  --pink-hover: #E75498;
+  --purple: #8E44AD;
+  --purple-secondary: #C39BD3;
+  --purple-hover: #703688;
 
-  --background: var(--white);
-  --foreground: var(--black);
+  --background: var(--pink);
+  --foreground: var(--purple);
 }
 
 @theme inline {
@@ -20,16 +26,22 @@
   --color-black-secondary: var(--black-secondary);
   --color-white: var(--white);
   --color-white-secondary: var(--white-secondary);
-  --color-orange: var(--orange);
-  --color-orange-secondary: var(--orange-secondary);
-  --color-orange-hover: var(--orange-hover);
+  --color-red: var(--red);
+  --color-red-secondary: var(--red-secondary);
+  --color-red-hover: var(--red-hover);
+  --color-pink: var(--pink);
+  --color-pink-secondary: var(--pink-secondary);
+  --color-pink-hover: var(--pink-hover);
+  --color-purple: var(--purple);
+  --color-purple-secondary: var(--purple-secondary);
+  --color-purple-hover: var(--purple-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--black);
+    --background: var(--pink);
     --foreground: var(--white);
   }
 }

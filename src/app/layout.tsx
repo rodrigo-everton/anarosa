@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lima Mix Construção",
-  description: "Empresa de construção civil especializada em pisos e concreto usinado.",
+  title: "Website Pessoal da Ana Rosa",
+  description: "Website pessoal da Ana Rosa",
 };
 
 export default function RootLayout({
