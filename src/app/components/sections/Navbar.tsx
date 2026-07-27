@@ -10,7 +10,7 @@ const navItens = [
   { name: "Home", href: "/" },
   { name: "Livros", href: "/livros" },
   { name: "Amazon", href: "/amazon" },
-  { name: "Mary Kay", href: "/marykay" },
+  { name: "Mary Kay", href: "https://loja.marykay.com.br/minha-vitrine?slug=marcas" },
   { name: "Contato", href: "/contato" },
 ];
 
@@ -21,7 +21,14 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <nav className="relative mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center text-xl font-bold text-black">
-          Ana Rosa
+          <Image
+            src="rose.svg"
+            alt="Rosa de Ana Rosa"
+            width={120}
+            height={40}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
