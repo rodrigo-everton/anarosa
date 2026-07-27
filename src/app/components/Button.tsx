@@ -1,11 +1,11 @@
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
 
-type ButtonVariant = "red" | "pink" | "ghost";
+type ButtonVariant = "red" | "pink" | "purple" | "ghostblack" | "ghostwhite";
 type ButtonSize = "sm" | "md" | "lg";
 
 type ButtonBaseProps = {
-    variant?: ButtonVariant;
-    size?: ButtonSize;
+  variant?: ButtonVariant;
+  size?: ButtonSize;
 }
 
 type ButtonAsButtonProps = ButtonBaseProps &
@@ -23,19 +23,21 @@ type ButtonProps = ButtonAsButtonProps | ButtonAsLinkProps;
 const baseClasses = "items-center justify-center rounded-md font-semibold transition-colors disabled:pointer-events-none disabled opacity-50"
 
 const displayClasses = new Set([
-    "hidden",
-    "block",
-    "inline-block",
-    "flex",
-    "inline-flex",
-    "grid",
-    "inline-grid",
+  "hidden",
+  "block",
+  "inline-block",
+  "flex",
+  "inline-flex",
+  "grid",
+  "inline-grid",
 ]);
 
 const variantClasses: Record<ButtonVariant, string> = {
-    red: "bg-red text-white hover:bg-red-hover",
-    pink: "bg-pink text-white hover:bg-pink-hover",
-    ghost: "bg-transparent text-black hover:bg-gray-100",
+  red: "bg-red text-white hover:bg-red-hover",
+  pink: "bg-pink text-white hover:bg-pink-hover",
+  purple: "bg-purple text-white hover:bg-purple-hover",
+  ghostblack: "bg-transparent text-black border-2 hover:bg-gray-100",
+  ghostwhite: "bg-transparent text-white border-2 hover:bg-gray-100 hover:text-black",
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -45,25 +47,25 @@ const sizeClasses: Record<ButtonSize, string> = {
 };
 
 function hasDisplayClass(className?: string) {
-    return className
+  return className
     ?.split(/\s+/)
-    .some((classToken) => 
-        displayClasses.has(classToken.split(":").at(-1) ?? ""),
+    .some((classToken) =>
+      displayClasses.has(classToken.split(":").at(-1) ?? ""),
     );
 }
 
 function getButtonClasses({
-    className,
-    variant = "red",
-    size = "md",
+  className,
+  variant = "red",
+  size = "md",
 }: ButtonBaseProps & { className?: string }) {
-    return [
-        hasDisplayClass(className) ? undefined : "inline-flex",
-        baseClasses,
-        variantClasses[variant],
-        sizeClasses[size],
-        className,
-    ]
+  return [
+    hasDisplayClass(className) ? undefined : "inline-flex",
+    baseClasses,
+    variantClasses[variant],
+    sizeClasses[size],
+    className,
+  ]
     .filter(Boolean)
     .join(" ");
 }
