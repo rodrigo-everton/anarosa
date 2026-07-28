@@ -5,16 +5,13 @@ const stores = [
     title: "Livros Autorais",
     description:
       "Livros de Ana Rosa, com temas variados e histórias envolventes.",
+    href: "https://www.amazon.com.br/author/ana-rosa",
   },
   {
     title: "Mary Kay",
     description:
       "Produtos de beleza e cuidados com a pele, com consultoria personalizada.",
-  },
-  {
-    title: "Amazon",
-    description:
-      "Venda de garagem: livros usados e outros acessórios.",
+    href: "https://loja.marykay.com.br/minha-vitrine?slug=marcas",
   },
 ];
 
@@ -30,19 +27,22 @@ export function Stores() {
             Explore os diversos produtos à venda.
           </h2>
           <p className="mt-4 text-base leading-7 text-black-secondary/70">
-            Livros autorais, usados e produtos de beleza, todos disponíveis aqui.
+            Livros autorais e produtos de beleza, todos disponíveis aqui.
           </p>
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {stores.map((store) => (
-            <article
+            <a
               key={store.title}
+              href={store.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="overflow-hidden rounded-lg border border-black-secondary/10 bg-white hover:opacity-80 hover:border-red hover:border-2"
             >
               <div className="flex aspect-[4/3] items-center justify-center bg-white-secondary">
                 <span className="text-sm font-semibold text-black-secondary/35">
-                  Foto do servico
+                  Foto de livros ou produtos de beleza
                 </span>
               </div>
 
@@ -54,7 +54,7 @@ export function Stores() {
                   {store.description}
                 </p>
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </div>
