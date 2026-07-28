@@ -18,11 +18,11 @@ export function Footer() {
           <div className="max-w-sm">
             <Link href="/" className="inline-flex items-center">
               <Image
-                src="/logo.jpg"
-                alt="LimaMix"
+                src="/rose.svg"
+                alt="Rosa de Ana Rosa"
                 width={140}
                 height={48}
-                className="h-12 w-auto object-contain"
+                className="h-12 w-auto object-contain hover:bg-pink-secondary border rounded-lg"
               />
             </Link>
 
@@ -39,7 +39,7 @@ export function Footer() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-orange"
+                    className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-pink-hover"
                   >
                     {item.name}
                   </a>
@@ -65,7 +65,7 @@ export function Footer() {
                   WhatsApp
                 </Button>
 
-                <a className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-orange">
+                <a className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-pink-hover">
                   Contactar pro WhatsApp
                 </a>
               </div>

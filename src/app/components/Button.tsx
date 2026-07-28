@@ -20,7 +20,7 @@ type ButtonAsLinkProps = ButtonBaseProps &
 
 type ButtonProps = ButtonAsButtonProps | ButtonAsLinkProps;
 
-const baseClasses = "items-center justify-center rounded-md font-semibold transition-colors disabled:pointer-events-none disabled opacity-50"
+const baseClasses = "items-center justify-center rounded-md font-semibold transition-colors disabled:pointer-events-none disabled:opacity-50"
 
 const displayClasses = new Set([
   "hidden",
@@ -33,9 +33,9 @@ const displayClasses = new Set([
 ]);
 
 const variantClasses: Record<ButtonVariant, string> = {
-  red: "bg-red text-white hover:bg-red-hover",
-  pink: "bg-pink text-white hover:bg-pink-hover",
-  purple: "bg-purple text-white hover:bg-purple-hover",
+  red: "bg-red text-white hover:bg-red-hover hover:text-white-secondary",
+  pink: "bg-pink text-white hover:bg-pink-hover hover:text-white-secondary",
+  purple: "bg-purple text-white hover:bg-purple-hover hover:text-white-secondary",
   ghostblack: "bg-transparent text-black border-2 hover:text-red",
   ghostwhite: "bg-transparent text-white border-2 hover:text-white-secondary",
 }

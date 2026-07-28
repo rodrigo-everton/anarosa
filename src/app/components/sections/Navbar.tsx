@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-//import { Button } from "@/components/Button";
 
 const navItens = [
   { name: "Home", href: "/" },
@@ -16,6 +15,31 @@ const navItens = [
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown)
+      window.removeEventListener("mousedown", handleClickOutside)
+    };
+  }, [isMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 bg-purple shadow-md">
@@ -54,7 +78,7 @@ export function Navbar() {
         </button>
 
         {isMenuOpen && (
-          <div className="absolute right-4 top-full mt-3 w-64 roundend-md border border-black-secondary bg-white p-3 shadow-lg md:hidden">
+          <div ref={menuRef} className="absolute right-4 top-full mt-3 w-64 roundend-md border border-black-secondary bg-white p-3 shadow-lg md:hidden">
             <div className="flex flex-col items-end gap-1">
               {navItens.map((item) => (
                 <a

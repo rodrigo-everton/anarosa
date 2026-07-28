@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ana Rosa",
-  description: "Website pessoal da Ana Rosa",
+  description: "Website pessoal da Ana Rosa. Acesse seus livros, artigos e produtos",
 };
 
 export default function RootLayout({
