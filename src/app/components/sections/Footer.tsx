@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/app/components/Button";
+import links from "../../links.json";
 
 const footerLinks = [
   { name: "Home", href: "/" },
-  { name: "Livros", href: "/livros" },
-  { name: "Amazon", href: "/amazon" },
-  { name: "Mary Kay", href: "https://loja.marykay.com.br/minha-vitrine?slug=marcas" },
+  { name: "Livros", href: links.amazon_livros },
+  { name: "Mary Kay", href: links.marykay },
   { name: "Contato", href: "/contato" },
 ];
 
@@ -51,7 +51,7 @@ export function Footer() {
               <h2 className="text-sm font-semibold text-black">Atendimento</h2>
               <div className="mt-4 flex flex-col gap-3">
                 <Button
-                  href="#whatsapp"
+                  href= {links.whatsapp}
                   className="gap-2"
                   variant="red"
                 >
@@ -65,7 +65,7 @@ export function Footer() {
                   WhatsApp
                 </Button>
 
-                <a className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-pink-hover">
+                <a className="text-sm font-medium text-black-secondary/70 transition-colors">
                   Contactar pro WhatsApp
                 </a>
               </div>

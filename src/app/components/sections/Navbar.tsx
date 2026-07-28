@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import links from "../../links.json";
 
 const navItens = [
   { name: "Home", href: "/" },
-  { name: "Livros", href: "/livros" },
-  { name: "Amazon", href: "/amazon" },
-  { name: "Mary Kay", href: "https://loja.marykay.com.br/minha-vitrine?slug=marcas" },
+  { name: "Livros", href: links.amazon_livros },
+  { name: "Mary Kay", href: links.marykay },
   { name: "Contato", href: "/contato" },
 ];
 

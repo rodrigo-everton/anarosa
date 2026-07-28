@@ -1,17 +1,18 @@
 import { Button } from "@/app/components/Button";
+import links from "../../links.json";
 
 const stores = [
   {
     title: "Livros Autorais",
     description:
       "Livros de Ana Rosa, com temas variados e histórias envolventes.",
-    href: "https://www.amazon.com.br/author/ana-rosa",
+    href: links.amazon_livros
   },
   {
     title: "Mary Kay",
     description:
       "Produtos de beleza e cuidados com a pele, com consultoria personalizada.",
-    href: "https://loja.marykay.com.br/minha-vitrine?slug=marcas",
+    href: links.marykay,
   },
 ];
 

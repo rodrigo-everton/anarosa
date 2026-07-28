@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/app/components/Button";
+import links from "../../links.json";
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button href="#whatsapp" size="lg" className="gap-2" variant="red">
+            <Button href= {links.whatsapp} size="lg" className="gap-2" variant="red">
               <Image
                 src="/whatsapp-logo.svg"
                 alt="WhatsApp Logo"
