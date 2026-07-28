@@ -27,8 +27,7 @@ export function Footer() {
             </Link>
 
             <p className="mt-4 text-sm leading-6 text-black-secondary/70">
-              Concreto usinado, pisos e soluções para obras com atendimento
-              ágil e acabamento profissional.
+              texto aqui
             </p>
           </div>
 
@@ -54,6 +53,7 @@ export function Footer() {
                 <Button
                   href="#whatsapp"
                   className="gap-2"
+                  variant="red"
                 >
                   <Image
                     src="/whatsapp-logo.svg"
@@ -65,12 +65,9 @@ export function Footer() {
                   WhatsApp
                 </Button>
 
-                {/* <a */}
-                  {/* href="#contato" */}
-                  {/* className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-orange" */}
-                {/* > */}
-                  {/* Solicitar orçamento */}
-                {/* </a> */}
+                <a className="text-sm font-medium text-black-secondary/70 transition-colors hover:text-orange">
+                  Contactar pro WhatsApp
+                </a>
               </div>
             </div>
           </div>

@@ -18,15 +18,15 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-purple shadow-md">
       <nav className="relative mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center text-xl font-bold text-black">
+        <Link href="/" className="flex items-center text-xl font-bold">
           <Image
             src="rose.svg"
             alt="Rosa de Ana Rosa"
             width={120}
             height={40}
-            className="h-10 w-auto object-contain"
+            className="h-10 w-auto object-contain bg-white border rounded-lg hover:bg-pink-secondary"
             priority
           />
         </Link>
@@ -36,7 +36,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-black font-semibold hover:text-gray-700"
+              className="text-white font-semibold hover:text-pink-secondary"
             >
               {item.name}
             </Link>
@@ -45,7 +45,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex size-10 items-center justify-center rounded-md border border-black-secondary text-black transition-colors hover:border-pink hover:text-pink md:hidden"
+          className="inline-flex size-10 items-center justify-center rounded-md border border-white text-white transition-colors hover:border-pink-secondary hover:text-pink-secondary md:hidden"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((current) => !current)}

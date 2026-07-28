@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Pessoal da Ana Rosa",
+  title: "Ana Rosa",
   description: "Website pessoal da Ana Rosa",
 };
 

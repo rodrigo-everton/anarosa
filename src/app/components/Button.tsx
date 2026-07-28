@@ -36,8 +36,8 @@ const variantClasses: Record<ButtonVariant, string> = {
   red: "bg-red text-white hover:bg-red-hover",
   pink: "bg-pink text-white hover:bg-pink-hover",
   purple: "bg-purple text-white hover:bg-purple-hover",
-  ghostblack: "bg-transparent text-black border-2 hover:bg-gray-100",
-  ghostwhite: "bg-transparent text-white border-2 hover:bg-gray-100 hover:text-black",
+  ghostblack: "bg-transparent text-black border-2 hover:text-red",
+  ghostwhite: "bg-transparent text-white border-2 hover:text-white-secondary",
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -56,7 +56,7 @@ function hasDisplayClass(className?: string) {
 
 function getButtonClasses({
   className,
-  variant = "red",
+  variant = "ghostblack",
   size = "md",
 }: ButtonBaseProps & { className?: string }) {
   return [
