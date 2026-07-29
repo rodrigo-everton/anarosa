@@ -27,7 +27,7 @@ export function Footer() {
             </Link>
 
             <p className="mt-4 text-sm leading-6 text-black-secondary/70">
-              texto aqui
+              Ana Rosa Carvalho de Abreu é uma escritora brasileira, servidora aposentada do Banco Central do Brasil e atuante em causas sociais.
             </p>
           </div>
 
