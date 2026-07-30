@@ -66,7 +66,7 @@ export function Footer() {
                 </Button>
 
                 <a className="text-sm font-medium text-black-secondary/70 transition-colors">
-                  Contactar pro WhatsApp
+                  Contactar por WhatsApp
                 </a>
               </div>
             </div>

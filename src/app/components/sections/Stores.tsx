@@ -1,18 +1,30 @@
-import { Button } from "@/app/components/Button";
 import links from "../../links.json";
+import { StoreSlider } from "./StoreSlider";
 
 const stores = [
   {
     title: "Livros Autorais",
     description:
       "Livros de Ana Rosa, com temas variados e histórias envolventes.",
-    href: links.amazon_livros
+    href: links.amazon_livros,
+    images: [
+      "/onomedarua.svg",
+      "/onomedarua1.svg",
+      "/onomedarua2.svg",
+      "/onomedarua3.svg",
+      "/onomedarua4.svg",
+      "/oposteeamenina.svg",
+      "/oposteeamenina1.svg",
+      "/oposteeamenina3.svg",
+      "/oposteeamenina4.svg",
+    ],
   },
   {
     title: "Mary Kay",
     description:
       "Produtos de beleza e cuidados com a pele, com consultoria personalizada.",
     href: links.marykay,
+    images: ["/foto1.svg"],
   },
 ];
 
@@ -32,7 +44,7 @@ export function Stores() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
           {stores.map((store) => (
             <a
               key={store.title}
@@ -41,11 +53,7 @@ export function Stores() {
               rel="noopener noreferrer"
               className="overflow-hidden rounded-lg border border-black-secondary/10 bg-white hover:opacity-80 hover:border-red hover:border-2"
             >
-              <div className="flex aspect-[4/3] items-center justify-center bg-white-secondary">
-                <span className="text-sm font-semibold text-black-secondary/35">
-                  Foto de livros ou produtos de beleza
-                </span>
-              </div>
+              <StoreSlider images={store.images} />
 
               <div className="p-5">
                 <h3 className="text-lg font-bold text-red">

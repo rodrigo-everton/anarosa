@@ -60,7 +60,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-white font-semibold hover:text-pink-secondary"
+              className="text-white m-2 font-semibold hover:text-pink-secondary"
             >
               {item.name}
             </Link>
