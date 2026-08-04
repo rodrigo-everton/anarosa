@@ -1,3 +1,5 @@
+"use client";
+
 import links from "../../links.json";
 import { StoreSlider } from "./StoreSlider";
 
@@ -30,7 +32,7 @@ const stores = [
 
 export function Stores() {
   return (
-    <section id="servicos" className="py-16 sm:py-20">
+    <section id="lojas" className="py-16 sm:py-20">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-normal text-red">

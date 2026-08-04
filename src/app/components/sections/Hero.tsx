@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/app/components/Button";
 import links from "../../links.json";

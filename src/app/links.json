@@ -1,5 +1,8 @@
 {
   "whatsapp" : "https://api.whatsapp.com/send/?phone=5561999716734&text=Ol%C3%A1+Ana+Rosa%2C+venho+do+seu+website+e+gostaria+de+conversar.&type=phone_number&app_absent=0",
   "amazon_livros" : "https://www.amazon.com/author/ana-rosa",
-  "marykay" : "https://loja.marykay.com.br/minha-vitrine?slug=marcas"
+  "marykay" : "https://loja.marykay.com.br/minha-vitrine?slug=marcas",
+  "instagram" : "https://www.instagram.com/anarosadf_/",
+  "facebook" : "https://www.facebook.com/anarosa200",
+  "linkedin": "https://www.linkedin.com/in/ana-rosa-abreu-a93a1113/"
 }

@@ -32,13 +32,13 @@ export function StoreSlider({ images }: StoreSliderProps) {
   );
 
   return (
-    <div className="relative aspect-[4/3]">
-      <div ref={sliderRef} className="keen-slider h-full w-full">
+    <div className="relative aspect-[4/3] overflow-hidden">
+      <div ref={sliderRef} className="keen-slider h-full w-full overflow-hidden">
         {images.map((image) => (
-          <div key={image} className="keen-slider__slide shrink-0">
+          <div key={image} className="keen-slider__slide h-full shrink-0">
             <img
               src={image}
-              className="h-full w-full object-cover"
+              className="block h-fit w-fit max-w-full max-h-full object-cover"
               alt=""
             />
           </div>
