@@ -2,6 +2,7 @@
 
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import Image from "next/image";
 
 interface StoreSliderProps {
   images: string[];
@@ -35,10 +36,23 @@ export function StoreSlider({ images }: StoreSliderProps) {
     <div className="relative aspect-[4/3] overflow-hidden">
       <div ref={sliderRef} className="keen-slider h-full w-full overflow-hidden">
         {images.map((image) => (
-          <div key={image} className="keen-slider__slide h-full shrink-0">
-            <img
+          <div
+            key={image}
+            className="keen-slider__slide relative flex h-full shrink-0 items-center justify-center overflow-hidden bg-white-secondary"
+          >
+            <Image
               src={image}
-              className="block h-fit w-fit max-w-full max-h-full object-cover"
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="scale-110 object-cover opacity-15 blur-xl"
+              alt=""
+              aria-hidden="true"
+            />
+            <Image
+              src={image}
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="z-10 object-contain p-3 sm:p-5"
               alt=""
             />
           </div>
