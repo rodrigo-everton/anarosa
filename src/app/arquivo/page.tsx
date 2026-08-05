@@ -13,19 +13,19 @@ const archivedItems = [
   {
     title: "Website Pessoal de 1999",
     description: "Registro preservado para consulta no Web Archive.",
-    image: "",
+    image: "/webarquive1999.png",
     href: "https://web.archive.org/web/19991002182034/http://www.angelfire.com/ar/rosa01/",
   },
   {
     title: "Website Pessoal em 2001",
     description: "Registro preservado para consulta no Web Archive.",
-    image: "",
+    image: "/webarquive2001.png",
     href: "https://web.archive.org/web/20010720161304/http://www.angelfire.com/ar/rosa01/",
   },
   {
     title: "Blog Google em 2009",
     description: "Registro preservado para consulta no Web Archive.",
-    image: "",
+    image: "/webarquive2009.png",
     href: "https://web.archive.org/web/20091221232552/http://www.paginadedireito.com/",
   },
 ];

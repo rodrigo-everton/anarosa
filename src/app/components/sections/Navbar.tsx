@@ -10,6 +10,7 @@ const navItens = [
   { name: "Home", href: "/" },
   { name: "Livros", href: links.amazon_livros },
   { name: "Mary Kay", href: links.marykay },
+  { name: "Arquivos", href: "/arquivo"},
   { name: "Contato", href: "/contato" },
 ];
 
@@ -43,7 +44,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-purple shadow-md">
-      <nav className="relative mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <nav className="relative mx-auto flex h-16 w-full max-w-7xl items-center justify-between grid-row px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center text-xl font-bold">
           <Image
             src="rose.svg"
