@@ -5,7 +5,7 @@ import {
 import Image from "next/image";
 import links from "../../links.json";
 
-const email = "anarosa200@gmail.com";
+const email = links.email;
 
 const contactLinks = [
   {
