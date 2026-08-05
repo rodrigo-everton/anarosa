@@ -27,11 +27,18 @@ const stores = [
       "Produtos de beleza e cuidados com a pele, com consultoria personalizada.",
     href: links.marykay,
     images: [
+      "/marykay.svg",
       "/marykay1.svg",
       "/marykay2.svg",
       "/marykay3.svg",
       "/marykay4.svg",
       "/marykay5.svg",
+      "/marykay6.svg",
+      "/marykay7.svg",
+      "/marykay8.svg",
+      "/marykay9.svg",
+      "/marykay10.svg",
+      "/marykay11.svg",
     ],
   },
 ];
