@@ -6,7 +6,7 @@ import links from "../../links.json";
 
 export function Hero() {
   return (
-    <section className="bg-white-secondary m-6 border-0 rounded">
+    <section className="bg-white-secondary m-6 border-0 rounded-2xl">
       <div className="mx-auto grid min-h-[calc(100vh-4rem)] w-full max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-16">
         <div className="max-w-2xl">
           <h1 className="mt-4 text-4xl font-bold leading-tight text-black sm:text-5xl lg:text-6xl">

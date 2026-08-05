@@ -32,7 +32,7 @@ const socialLinks = [
 
 export function Contact() {
   return (
-    <main className="bg-white-secondary border rounded m-2 px-4 py-12 sm:px-6 sm:py-16 md:m-4 lg:px-8 lg:py-20">
+    <main className="m-2 px-4 py-6 sm:px-6 sm:py-8 md:m-4 lg:px-8 lg:py-10">
       <section
         aria-labelledby="contact-title"
         className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-3xl bg-white shadow-xl shadow-black/5 ring-1 ring-black/5"

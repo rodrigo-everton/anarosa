@@ -5,8 +5,20 @@ import { Footer } from "../components/sections/Footer";
 import { Navbar } from "../components/sections/Navbar";
 
 export const metadata: Metadata = {
-  title: "Arquivo",
-  description: "Registros de Ana Rosa preservados no Web Archive.",
+  title: "Arquivos | Website Pessoal da Ana Rosa",
+  description:
+    "Registros de Ana Rosa preservados no Web Archive. Venha conhecer os websites de Ana Rosa e suas evoluções desde o ínicio da Web no Brasil",
+
+  alternates: {
+    canonical: "/arquivo",
+  },
+
+  openGraph: {
+    title: "Arquivos | Website Pessoal da Ana Rosa",
+    description:
+      "Registros de Ana Rosa preservados no Web Archive. Venha conhecer os websites de Ana Rosa e suas evoluções desde o ínicio da Web no Brasil",
+    url: "/arquivo",
+  },
 };
 
 const archivedItems = [
