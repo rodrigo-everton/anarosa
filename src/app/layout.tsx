@@ -4,18 +4,20 @@ import "./globals.css";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
+const TITLE = "Ana Rosa - Website Pessoal";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Ana Rosa",
-    template: "%s | Ana Rosa",
+    default: TITLE,
+    template: "%s",
   },
 
   description:
     "Website pessoal da Ana Rosa. Acesse seus livros, artigos e produtos. Faça contato pelos meios disponíveis na página /contato",
 
-  applicationName: "Ana Rosa",
+  applicationName: TITLE,
 
   authors: [
     {
@@ -41,27 +43,27 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "Ana Rosa",
-    title: "Ana Rosa",
+    siteName: TITLE,
+    title: TITLE,
     description:
       "Website pessoal da Ana Rosa. Acesse seus livros, artigos e produtos. Faça contato pelos meios disponíveis na página /contato",
     images: [
       {
-        url: "/foto2.svg",
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Ana Rosa",
+        alt: "Flor Rosa da Ana Rosa",
       },
     ],
   },
 
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: "Ana Rosa",
-  //   description:
-  //     "Descrição clara da empresa, do serviço e da região atendida.",
-  //   images: ["/opengraph-image.jpg"],
-  // },
+   twitter: {
+     card: "summary_large_image",
+     title: TITLE,
+     description:
+       "Descrição clara da empresa, do serviço e da região atendida.",
+     images: ["/opengraph-image.jpg"],
+   },
 
   robots: {
     index: true,
@@ -82,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="pt_BR" className="h-full antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

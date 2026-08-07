@@ -5,7 +5,7 @@ import { Footer } from "../components/sections/Footer";
 import { Navbar } from "../components/sections/Navbar";
 
 export const metadata: Metadata = {
-  title: "Arquivos | Website Pessoal da Ana Rosa",
+  title: "Arquivos | Ana Rosa - Website Pessoal",
   description:
     "Registros de Ana Rosa preservados no Web Archive. Venha conhecer os websites de Ana Rosa e suas evoluções desde o ínicio da Web no Brasil",
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Arquivos | Website Pessoal da Ana Rosa",
+    title: "Arquivos | Ana Rosa - Website Pessoal",
     description:
       "Registros de Ana Rosa preservados no Web Archive. Venha conhecer os websites de Ana Rosa e suas evoluções desde o ínicio da Web no Brasil",
     url: "/arquivo",
@@ -50,9 +50,9 @@ export default function ArquivoPage() {
       <main className="flex-1 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
         <section aria-labelledby="archive-title" className="mx-auto w-full max-w-7xl">
           <div className="rounded-3xl mx-auto max-w-2xl text-center px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 bg-white-secondary">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-red">
+            <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-red">
               Memória e história
-            </p>
+            </h2>
             <h1
               id="archive-title"
               className="mt-3 text-4xl font-bold leading-tight text-black sm:text-5xl"

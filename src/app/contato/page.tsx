@@ -4,7 +4,7 @@ import { Footer } from "../components/sections/Footer";
 import { Navbar } from "../components/sections/Navbar";
 
 export const metadata: Metadata = {
-  title: "Contatos | Website Pessoal da Ana Rosa",
+  title: "Contatos | Ana Rosa - Website Pessoal",
   description:
     "Contacte Ana Rosa através desta página. Aqui estão links para seu e-mail e as redes sociais dela: Facebook, Instagram, Linkedin, Whatsapp",
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Contatos | Website Pessoal da Ana Rosa",
+    title: "Contatos | Ana Rosa - Website Pessoal",
     description:
       "Contacte Ana Rosa através desta página. Aqui estão links para seu e-mail e as redes sociais dela: Facebook, Instagram, Linkedin, Whatsapp",
     url: "/contato",

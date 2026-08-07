@@ -52,9 +52,9 @@ export function Contact() {
               <div className="flex size-12 items-center justify-center rounded-2xl bg-white/15 ring-1 ring-white/20">
                 <Mail aria-hidden="true" className="size-6" />
               </div>
-              <p className="mt-7 text-sm font-bold uppercase tracking-[0.18em] text-white/70">
+              <h2 className="mt-7 text-sm font-bold uppercase tracking-[0.18em] text-white/70">
                 Entre em contato
-              </p>
+              </h2>
               <h1
                 id="contact-title"
                 className="mt-3 text-4xl font-bold leading-tight sm:text-5xl"

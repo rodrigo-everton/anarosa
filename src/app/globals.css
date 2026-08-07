@@ -15,8 +15,8 @@
   --purple-secondary: #C39BD3;
   --purple-hover: #703688;
 
-  --background: var(--pink);
-  --foreground: var(--purple);
+  --background: var(--purple-secondary);
+  --foreground: var(--white);
 }
 
 @theme inline {

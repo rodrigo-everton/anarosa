@@ -75,9 +75,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-black-secondary/10 pt-6 text-sm text-black-secondary/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>Ana Rosa</p>
-          <p>Todos os direitos reservados.</p>
+        <div className="flex flex-col gap-2 border-t border-black-secondary/10 pt-6 text-sm text-black-secondary/60 sm:flex-row sm:items-center sm:justify-start">
+          <p>@Ana Rosa</p>
+          <p>| Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

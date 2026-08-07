@@ -1,8 +1,22 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+
+  async redirects() {
+    return [
+      {
+        source: "/kits",
+        destination: "/produtos",
+        permanent: false,
+      },
+      {
+        source: "/quem-somos",
+        destination: "/sobre",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
