@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const archivedItems = [
   {
-    title: "Website Pessoal de 1999",
+    title: "Website Pessoal em 1999",
     description: "Registro preservado para consulta no Web Archive.",
     image: "/webarquive1999.png",
     href: "https://web.archive.org/web/19991002182034/http://www.angelfire.com/ar/rosa01/",

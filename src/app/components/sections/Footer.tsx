@@ -9,6 +9,7 @@ const footerLinks = [
   { name: "Home", href: "/" },
   { name: "Livros", href: links.amazon_livros },
   { name: "Mary Kay", href: links.marykay },
+  { name: "Arquivos", href: "/arquivo"},
   { name: "Contato", href: "/contato" },
 ];
 
@@ -36,7 +37,7 @@ export function Footer() {
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12">
             <div>
               <h2 className="text-sm font-semibold text-black">Navegação</h2>
-              <div className="mt-4 flex flex-col gap-3">
+              <div className="mt-2 flex flex-col gap-3">
                 {footerLinks.map((item) => (
                   <a
                     key={item.href}
